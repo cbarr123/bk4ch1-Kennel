@@ -16,6 +16,7 @@
     ],
     "owners": [
         { "id": 1, "name": "Owen Owner", "phoneNumber": "615-333-4444"},
-        { "id": 2, "name": "Sue Owner", "phoneNumber": "423-222-3333"}
+        { "id": 2, "name": "Sue Owner", "phoneNumber": "423-222-3333"},
+        { "id": 3, "name": "Bob Owner", "phoneNumber": "222-444-5555"}
     ]
 }
