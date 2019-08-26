@@ -4,17 +4,11 @@ import React, { Component } from 'react'
 class OwnerCard extends Component {
   render() {
     return (
-      <div>
-        <div>
-          <h2>Owner Card<br />
-            <small>Loving care when you're not there.</small>
-          </h2>
-          <address>
-            Visit Us at the Nashville North Location
-            <br />500 Puppy Way
-          </address>
-        </div>
-        <div>
+      <div className="card">
+        <div className="card-content">
+          <h2>Owner Card</h2>
+          <h2>Name: <span>{this.props.owner.name}</span></h2>
+          <h2>Phone Number: <span>{this.props.owner.phoneNumber}</span></h2>
         </div>
       </div>
     );

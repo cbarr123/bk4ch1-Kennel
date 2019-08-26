@@ -24,7 +24,8 @@ render() {
 
     return(
         <div className="container-cards">
-            {this.state.owners.map(owner => <OwnerCard />)}
+            {this.state.owners.map(owner => 
+            <OwnerCard key={owner.id} owner={owner}/>)}
         </div>
     )
 }

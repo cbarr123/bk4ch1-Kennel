@@ -23,7 +23,8 @@ render(){
     console.log("LOCATION LIST: Render");
     return(
         <div className="location-cards">
-            {this.state.locations.map(location => <LocationCard />)}
+            {this.state.locations.map(location => 
+            <LocationCard key={location.id} location={location} />)}
         </div>
     )
 }

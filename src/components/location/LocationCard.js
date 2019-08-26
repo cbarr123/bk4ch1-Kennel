@@ -4,15 +4,10 @@ import React, { Component } from 'react'
 class LocationCard extends Component {
   render() {
     return (
-      <div>
-        <div>
-          <h2>Location</h2>
-          <address>
-            Visit Us at the Nashville North Location
-            500 Puppy Way
-          </address>
-        </div>
-        <div>
+      <div className="card">
+        <div className="card-content">
+          <h2>Location Card</h2>
+          <h2>Name: <span>{this.props.location.name}</span></h2>
         </div>
       </div>
     );
