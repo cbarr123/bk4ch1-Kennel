@@ -1,24 +1,18 @@
 import React, { Component } from 'react'
 // import './Kennel.css'
 
-class Kennel extends Component {
+
+class EmployeeCard extends Component {
   render() {
     return (
-      <div>
-        <div>
-          <h2>Employee Card<br />
-            <small>Loving care when you're not there.</small>
-          </h2>
-          <address>
-            Visit Us at the Nashville North Location
-            <br />500 Puppy Way
-          </address>
-        </div>
-        <div>
+      <div className="card">
+        <div className="card-content">
+          <h2>Employee Card</h2>
+          <h2>Name: <span>{this.props.employee.name}</span></h2>
         </div>
       </div>
     );
   }
 }
 
-export default Kennel;
+export default EmployeeCard;
