@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import AnimalCard from './animal/AnimalCard'
-import './Kennel.css'
+// import './Kennel.css'
 
 class Kennel extends Component {
   render() {
@@ -16,9 +15,6 @@ class Kennel extends Component {
           </address>
         </div>
         <div>
-          <AnimalCard />
-          <AnimalCard />
-          <AnimalCard />
         </div>
       </div>
     );

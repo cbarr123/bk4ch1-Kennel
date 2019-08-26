@@ -1,28 +1,22 @@
 import React, { Component } from 'react'
-import AnimalCard from './animal/AnimalCard'
-import './Kennel.css'
+// import './components/Kennel.css'
 
-class Kennel extends Component {
+class LocationCard extends Component {
   render() {
     return (
       <div>
         <div>
-          <h2>Location<br />
-            <small>Loving care when you're not there.</small>
-          </h2>
+          <h2>Location</h2>
           <address>
             Visit Us at the Nashville North Location
-            <br />500 Puppy Way
+            500 Puppy Way
           </address>
         </div>
         <div>
-          <AnimalCard />
-          <AnimalCard />
-          <AnimalCard />
         </div>
       </div>
     );
   }
 }
 
-export default Kennel;
+export default LocationCard;

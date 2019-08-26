@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import AnimalCard from './animal/AnimalCard'
-import './Kennel.css'
+// import './src/components/Kennel.css'
 
-class Kennel extends Component {
+class OwnerCard extends Component {
   render() {
     return (
       <div>
@@ -16,13 +15,10 @@ class Kennel extends Component {
           </address>
         </div>
         <div>
-          <AnimalCard />
-          <AnimalCard />
-          <AnimalCard />
         </div>
       </div>
     );
   }
 }
 
-export default Kennel;
+export default OwnerCard;
