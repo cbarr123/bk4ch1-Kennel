@@ -3,15 +3,17 @@ import React, { Component } from "react";
 import Home from "./home/Home";
 // import AnimalCard from './animal/AnimalCard'
 import AnimalList from "./animal/AnimalList";
+import AnimalDetail from "./animal/AnimalDetail";
+import AnimalForm from './animal/AnimalForm'
 //only include these once they are built - previous practice exercise
 // import LocationCard from './location/LocationCard'
 import LocationList from "./location/LocationList";
+import LocationDetail from './location/LocationDetail'
 // import EmployeeCard from './employee/EmployeeCard'
 import EmployeeList from "./employee/EmployeeList";
+import EmployeeForm from "./employee/EmployeeForm"
 // import OwnerCard from './owner/OwnerCard'
 import OwnerList from "./owner/OwnerList";
-import AnimalDetail from "./animal/AnimalDetail";
-import LocationDetail from './location/LocationDetail'
 
 class ApplicationViews extends Component {
   render() {
@@ -27,21 +29,46 @@ class ApplicationViews extends Component {
         <Route
           path="/animal"
           render={props => {
-            return <AnimalList />;
+            return <AnimalList {...props}/>;
+        }}
+        />
+        <Route
+          exact
+          path="/animals"
+          render={props => {
+            return <AnimalList {...props}/>;
           }}
         />
+        <Route 
+            path="/animals/new" 
+            render={(props) => {
+            return <AnimalForm {...props} />
+        }} />
         <Route
           path="/location"
           render={props => {
-            return <LocationList />;
-          }}
-        />
+              return <LocationList />;
+            }}
+          />
+          {/* Employee*/}
         <Route
           path="/employee"
           render={props => {
-            return <EmployeeList />;
-          }}
+              return <EmployeeList {...props}/>;
+            }}
         />
+        <Route
+          path="/employees"
+          render={props => {
+              return <EmployeeList {...props}/>;
+            }}
+        />
+        <Route 
+            path="/employees/new" 
+            render={(props) => {
+            return <EmployeeForm {...props} />
+        }} />
+        {/* Owner*/}
         <Route
           path="/owner"
           render={props => {
@@ -50,18 +77,11 @@ class ApplicationViews extends Component {
         />
         {/* Make sure you add the `exact` attribute here */}
         <Route
-          exact
-          path="/animals"
-          render={props => {
-            return <AnimalList />;
-          }}
-        />
-        <Route
           path="/animals/:animalId(\d+)"
           render={props => {
             // Pass the animalId to the AnimalDetailComponent
             return (
-              <AnimalDetail animalId={parseInt(props.match.params.animalId)} />
+              <AnimalDetail animalId={parseInt(props.match.params.animalId)} {...props}/>
             );
           }}
         />
@@ -78,7 +98,7 @@ class ApplicationViews extends Component {
           render={props => {
             // Pass the animalId to the AnimalDetailComponent
             return (
-              <LocationDetail locationId={parseInt(props.match.params.locationId)} />
+              <LocationDetail locationId={parseInt(props.match.params.locationId)}  {...props}/>
             );
           }}
         />

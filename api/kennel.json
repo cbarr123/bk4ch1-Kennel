@@ -6,14 +6,29 @@
       "breed": "Poodle"
     },
     {
-      "id": 2,
-      "name": "Decker",
-      "breed": "German Sheperd"
-    },
-    {
       "id": 3,
       "name": "Esme",
       "breed": "Pitbull"
+    },
+    {
+      "name": "Taco",
+      "breed": "Bulldog",
+      "id": 4
+    },
+    {
+      "name": "Thomas",
+      "breed": "Staffordshire Terrier",
+      "id": 5
+    },
+    {
+      "name": "Sammie",
+      "breed": "Lab Mix",
+      "id": 6
+    },
+    {
+      "name": "Tom",
+      "breed": "Terrier",
+      "id": 7
     }
   ],
   "locations": [
@@ -45,6 +60,42 @@
     {
       "id": 3,
       "name": "Earl Erlhander"
+    },
+    {
+      "name": "Steve Mostly",
+      "id": 4
+    },
+    {
+      "name": "Steve Justice 2",
+      "id": 5
+    },
+    {
+      "name": "Thomas Crutcher",
+      "id": 6
+    },
+    {
+      "name": "Thomas Banks",
+      "id": 7
+    },
+    {
+      "name": "Sandy Woods",
+      "id": 8
+    },
+    {
+      "name": "Sandy Hooker",
+      "id": 9
+    },
+    {
+      "name": "Tommy Core",
+      "id": 10
+    },
+    {
+      "name": "Tommy D",
+      "id": 11
+    },
+    {
+      "name": "Tommy E",
+      "id": 12
     }
   ],
   "owners": [
