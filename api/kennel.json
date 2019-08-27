@@ -19,15 +19,18 @@
   "locations": [
     {
       "id": 1,
-      "name": "Nashville North"
+      "name": "Nashville North",
+      "city": "Nashville"
     },
     {
       "id": 2,
-      "name": "Nashville South"
+      "name": "Nashville South",
+      "city": "Nashville"
     },
     {
       "id": 3,
-      "name": "Nashville East"
+      "name": "Nashville East",
+      "city": "Nashville"
     }
   ],
   "employees": [
