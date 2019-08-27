@@ -7,8 +7,9 @@ class EmployeeCard extends Component {
     return (
       <div className="card">
         <div className="card-content">
-          <h2>Employee Card</h2>
-          <h2>Name: <span>{this.props.employee.name}</span></h2>
+          <h3>Employee Card</h3>
+          <h3>Name: <span>{this.props.employee.name}</span></h3>
+          <button type="button" onClick={() => this.props.deleteEmployee(this.props.employee.id)}>Your Outta' Here!</button>
         </div>
       </div>
     );
