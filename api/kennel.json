@@ -26,9 +26,14 @@
       "id": 6
     },
     {
-      "name": "Tom",
-      "breed": "Terrier",
-      "id": 7
+      "name": "Coco",
+      "breed": "crazydog",
+      "id": 8
+    },
+    {
+      "name": "macy",
+      "breed": "lab mix",
+      "id": 9
     }
   ],
   "locations": [
@@ -96,6 +101,14 @@
     {
       "name": "Tommy E",
       "id": 12
+    },
+    {
+      "name": "Coco Dogmatic",
+      "id": 13
+    },
+    {
+      "name": "Tommy Burns",
+      "id": 15
     }
   ],
   "owners": [

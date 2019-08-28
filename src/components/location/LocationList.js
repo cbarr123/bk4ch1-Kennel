@@ -21,16 +21,28 @@ class LocationList extends Component {
 
   render() {
     console.log("LOCATION LIST: Render");
+    
     return (
-      <div className="location-cards">
-        {this.state.locations.map(location => (
-          <LocationCard
+      <React.Fragment>
+        <section className="section-content">
+            <button type="button"
+                className="btn"
+                onClick={() => {this.props.history.push("/locations/new")}}>
+                Open Location
+            </button>
+            </section>
+
+
+        <div className="location-cards">
+          {this.state.locations.map(location => (
+            <LocationCard
             key={location.id}
             location={location}
             deleteLocation={this.deleteLocation}
-          />
-        ))}
-      </div>
+            />
+            ))}
+        </div>
+      </React.Fragment>
     );
   }
 

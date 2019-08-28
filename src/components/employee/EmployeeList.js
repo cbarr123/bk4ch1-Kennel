@@ -11,11 +11,11 @@ class EmployeeList extends Component {
 componentDidMount(){
     console.log("EMPLOYEE LIST: ComponentDidMount");
     EmployeeManager.getAll()
-    .then((employees) => {
+    .then(employees => {
         this.setState({
             employees: employees
-        })
-    })
+        });
+    });
 }
 
 render(){
