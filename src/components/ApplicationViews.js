@@ -15,9 +15,11 @@ import LocationForm from "./location/LocationForm";
 // import EmployeeCard from './employee/EmployeeCard'
 import EmployeeList from "./employee/EmployeeList";
 import EmployeeForm from "./employee/EmployeeForm";
+import EmployeeEditForm from "./employee/EmployeeEditForm";
 // import OwnerCard from './owner/OwnerCard'
 import OwnerList from "./owner/OwnerList";
 import OwnerForm from "./owner/OwnerForm";
+import OwnerEditForm from "./owner/OwnerEditForm";
 
 class ApplicationViews extends Component {
   // Check if credentials are in local storage
@@ -66,7 +68,7 @@ class ApplicationViews extends Component {
           }}
         />
         <Route
-          path="/animals/:animalId(\d+)"
+          exact path="/animals/:animalId(\d+)"
           render={props => {
             // Pass the animalId to the AnimalDetailComponent
             return (
@@ -138,6 +140,12 @@ class ApplicationViews extends Component {
             return <EmployeeForm {...props} />;
           }}
         />
+        <Route
+            path="/employees/:employeeId(\d+)/edit" 
+            render={props => {
+                return <EmployeeEditForm {...props} />
+            }}
+        />
         {/* Owner*/}
         {/*<Route
           path="/owner"
@@ -158,6 +166,12 @@ class ApplicationViews extends Component {
           render={props => {
             return <OwnerForm {...props} />;
           }}
+        />
+        <Route
+            path="/owners/:ownerId(\d+)/edit" 
+            render={props => {
+                return <OwnerEditForm {...props} />
+            }}
         />
       </React.Fragment>
     );

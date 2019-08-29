@@ -7,13 +7,11 @@
     },
     {
       "id": 3,
-      "name": "Esme",
-      "breed": "Pitbull"
+      "name": "Early Erlhander"
     },
     {
-      "name": "Taco",
-      "breed": "Bulldog",
-      "id": 4
+      "id": 4,
+      "name": "Steven Mostly"
     },
     {
       "name": "Thomas",
@@ -26,14 +24,14 @@
       "id": 6
     },
     {
-      "name": "Coco",
-      "breed": "crazydog",
-      "id": 8
+      "id": 8,
+      "name": "Coco Bear",
+      "breed": "crazydog"
     },
     {
-      "name": "macy",
-      "breed": "lab mix",
-      "id": 9
+      "id": 9,
+      "name": "Macy",
+      "breed": "lab mix"
     }
   ],
   "locations": [
@@ -60,55 +58,11 @@
     },
     {
       "id": 2,
-      "name": "Tom Thompson"
+      "name": "Tom T Thompson"
     },
     {
-      "id": 3,
-      "name": "Earl Erlhander"
-    },
-    {
-      "name": "Steve Mostly",
-      "id": 4
-    },
-    {
-      "name": "Steve Justice 2",
-      "id": 5
-    },
-    {
-      "name": "Thomas Crutcher",
-      "id": 6
-    },
-    {
-      "name": "Thomas Banks",
-      "id": 7
-    },
-    {
-      "name": "Sandy Woods",
-      "id": 8
-    },
-    {
-      "name": "Sandy Hooker",
-      "id": 9
-    },
-    {
-      "name": "Tommy Core",
-      "id": 10
-    },
-    {
-      "name": "Tommy D",
-      "id": 11
-    },
-    {
-      "name": "Tommy E",
-      "id": 12
-    },
-    {
-      "name": "Coco Dogmatic",
-      "id": 13
-    },
-    {
-      "name": "Tommy Burns",
-      "id": 15
+      "id": 4,
+      "name": "Steven Mostly"
     }
   ],
   "owners": [
@@ -119,13 +73,18 @@
     },
     {
       "id": 2,
-      "name": "Sue Owner",
-      "phoneNumber": "423-222-3333"
+      "name": "Sue Owner ",
+      "phoneNumber": "423-222-33333"
     },
     {
       "id": 3,
-      "name": "Bob Owner",
-      "phoneNumber": "222-444-5555"
+      "name": "Thomas Turnerd",
+      "phoneNumber": "615-330-401111"
+    },
+    {
+      "id": 6,
+      "name": "Theodore Caldwell",
+      "phoneNumber": "615-789-1234"
     }
   ]
 }

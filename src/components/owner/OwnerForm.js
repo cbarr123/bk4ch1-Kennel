@@ -5,6 +5,7 @@ import './OwnerForm.css'
 class OwnerForm extends Component {
     state = {
         name: "",
+        phoneNumber: "",
         loadingStatus: false,
     };
 
@@ -23,7 +24,8 @@ class OwnerForm extends Component {
         } else {
             this.setState({ loadingStatus: true });
             const owner = {
-                name: this.state.ownerName
+                name: this.state.ownerName,
+                phoneNumber: this.state.phoneNumber
             };
 
             // Create the animal and redirect user to animal list
@@ -46,6 +48,16 @@ class OwnerForm extends Component {
                         placeholder="Owner name"
                         />
                         <label htmlFor="ownerName">Owner Name</label>
+
+                        <input
+                        type="text"
+                        required
+                        onChange={this.handleFieldChange}
+                        id="phoneNumber"
+                        placeholder="Phone number"
+                        />
+                        <label htmlFor="phoneNumber">Phone Number</label>
+
                     </div>
                     <div className="alignRight">
                         <button

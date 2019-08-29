@@ -36,15 +36,16 @@ class OwnerList extends Component {
             <OwnerCard
               key={owner.id}
               owner={owner}
-              deleteLocation={this.deleteLocation}
+              deleteOwner={this.deleteOwner}
+              {...this.props}
             />
           ))}
         </div>
-      </React.Fragment>
+      </React.Fragment> 
     );
   }
 
-  deleteAnimal = id => {
+  deleteOwner = id => {
     OwnerManager.delete(id).then(() => {
       OwnerManager.getAll().then(newOwners => {
         this.setState({
